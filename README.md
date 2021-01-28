@@ -43,6 +43,11 @@ DVDeconv contains below 3 folders.
 When you want to generate bars image under depth-variant image model, refer dataset_variant.m script.  
 When you want to generate bars image under depth-invariant image model, refer dataset_invariant.m script.
 
+### Estimating aberration values  
+(main function) DVDeconv/PSFGenerator_GUI/ToFindParameters.m  
+(loss function) DVDeconv/PSFGenerator_GUI/myobjfun.m  
+When PSF is unknown, aberration values for PSF generation are estimated by referring to the code above.  
+
 ## Demo in the paper 
 ### PSFGenerator_GUI  
 1. Launch Matlab.  

@@ -43,6 +43,43 @@ DVDeconv contains below 3 folders.
 When you want to generate bars image under depth-variant image model, refer dataset_variant.m script.
 When you want to generate bars image under depth-invariant image model, refer dataset_invariant.m script.
 
+## Demo in the paper 
+### PSFGenerator_GUI  
+1. Launch Matlab.  
+2. Add path.  
+  addpath('PSFGenerator_GUI')  
+3. Run.  
+4-1. Leaving the initial values, click 'Generate' button.
+Then, the PSFs for depth-variant asymmetric algorithms are generated and saved the current folder.
+The PSF for depth-invariant asymmetric algorithm is h00064.mat 
+The generated results can be downloaded from 'DataSet/DVAsymPSF', 'DataSet/InvAsymPSF'
+4-2. Set W8 and W12 to 0, click 'Generate' button.
+Then, the PSFs for depth-variant symmetric algorithms are generated and saved the current folder.
+The PSF for depth-invariant symmetric algorithm is h00064.mat 
+The generated results can be downloaded from 'DataSet/DVSymPSF', 'DataSet/InvSymPSF'
+
+### Deconv_GUI
+1. Launch Matlab.  
+2. Add path.  
+  addpath('Deconv_GUI')   
+3. Run.  
+  Deconv_GUI  
+4. Click "Open" in Image section. And select folder that include images to restore.  
+For 15dB Dataset, set the path as 'DataSet/G15-P' 
+For 10dB Dataset, set the path as 'DataSet/G10-P'   
+5. Click "Open" in PSF section. And select folder that include PSF.  
+Select the PSF folder that matches the algorithm you want to execute.
+ex) DataSet/DVAsymPSF for Depth-variant asymmetric OSL/GEM algorithm 
+ex) DataSet/InvSymPSF for Depth-invariant symmetric OSL/GEM algorithm
+6. Select algorithm and setting parameters in Algorithm section. 
+In the experiment in the paper, 
+γ was set to 0.00001,  c was set to 0.6 in the 15dB dataset.
+γ was set to 0.0006, c was set to 5  for depth-variant GEM algorithm in the 10dB dataset.
+γ was set to 0.0001 for depth-variant algorithm except GEM in the 10dB dataset.
+7. After setting options for deconvolution in Result section, click "Run".
+The Depth-variant deconvolution results are obtained after 29 iterations.
+The Depth-invariant deconvolution results are obtained after 20 iterations.
+
 ## References and License
 If you find my work helpful in your research, please kindly cite below papers.
 

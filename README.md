@@ -50,11 +50,11 @@ When you want to generate bars image under depth-invariant image model, refer da
   addpath('PSFGenerator_GUI')  
 3. Run.  
 4-1. Leaving the initial values, click 'Generate' button.  
-Then, the PSFs for depth-variant asymmetric algorithms are generated and saved the current folder.  
+Then, the PSFs for depth-variant asymmetric algorithms are generated and saved in the current folder.  
 The PSF for depth-invariant asymmetric algorithm is h00064.mat  
 The generated results can be downloaded from 'DataSet/DVAsymPSF', 'DataSet/InvAsymPSF'  
 4-2. Set W8 and W12 to 0, click 'Generate' button.  
-Then, the PSFs for depth-variant symmetric algorithms are generated and saved the current folder.  
+Then, the PSFs for depth-variant symmetric algorithms are generated and saved in the current folder.  
 The PSF for depth-invariant symmetric algorithm is h00064.mat  
 The generated results can be downloaded from 'DataSet/DVSymPSF', 'DataSet/InvSymPSF'  
 
